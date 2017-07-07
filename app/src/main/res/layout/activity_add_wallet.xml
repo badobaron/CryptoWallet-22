@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.kjpm.com.cryptowallet.AddWallet"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true" android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ADD WALLET"
+        android:id="@+id/textView2" android:layout_gravity="center_horizontal"
+        android:layout_weight="0.08" android:gravity="center"
+        android:textColor="#2A95E7"
+        android:textSize="30dp"
+        android:background="#ffffff" android:layout_marginBottom="10dp"/>
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="WALLET NAME"
+        android:id="@+id/textView3" android:layout_marginTop="10dp"
+        android:gravity="center" android:layout_weight="0.02" android:layout_marginLeft="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText" android:layout_gravity="center_horizontal"
+        android:layout_weight="0.04" android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" android:background="#ffff"
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall" android:text="WALLET TYPE"
+              android:id="@+id/textView4" android:layout_marginTop="10dp" android:gravity="center"
+              android:layout_weight="0.08" android:layout_marginLeft="20dp"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:id="@+id/spinner" android:layout_marginLeft="20dp"
+        android:entries="@array/spinnerItems"
+        android:layout_marginRight="20dp" android:background="#fff"/>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceSmall" android:text="ADDRESS"
+              android:id="@+id/textView5" android:layout_marginTop="10dp" android:gravity="center"
+              android:layout_weight="0.08" android:layout_marginLeft="20dp"/>
+    <EditText android:layout_width="match_parent" android:layout_height="wrap_content"
+              android:id="@+id/editText2" android:layout_gravity="center_horizontal"
+              android:layout_weight="0.05" android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp" android:background="#ffff"/>
+    <Button android:layout_width="337dp" android:layout_height="wrap_content"
+            android:text="SAVE" android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp" android:layout_marginRight="10dp"
+            android:textColor="#fff" android:background="#f18f3a" android:layout_marginTop="15dp"
+            android:textSize="20dp" android:layout_marginBottom="10dp"/>
+</LinearLayout>
