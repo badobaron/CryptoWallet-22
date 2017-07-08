@@ -2,6 +2,7 @@ package android.kjpm.com.cryptowallet;
 
 import android.content.Context;
 import android.content.Intent;
+import android.kjpm.com.cryptowallet.models.service.CryptoWalletService;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -23,6 +24,13 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
+
+import javax.inject.Inject;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     EditText txtWalletAddress;
@@ -50,6 +58,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         currency = (Spinner) this.findViewById(R.id.spinner);
         btnSubmit = (Button) this.findViewById(R.id.button);
         btnSubmit.setOnClickListener(this);
+        CryptoWalletApplication.get(this).getCryptoWalletService().getWallet().enqueue(new Callback<Currency>() {
+            @Override
+            public void onResponse(Call<Currency> call, Response<Currency> response) {
+                Toast.makeText(MainActivity.this, response.body().toString(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onFailure(Call<Currency> call, Throwable t) {
+                Toast.makeText(MainActivity.this, "Error getting repos " + t.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override

@@ -44,7 +44,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     public void onBindViewHolder(RecyclerAdapter.ViewHolder holder, int position) {
 
         holder.address.setText(currency.get(position).getAddress());
-        holder.balance.setText(currency.get(position).getBalance());
+        holder.balance.setText(currency.get(position).getBalance()+"");
 //        holder.container.setOnClickListener(onClickListener(position));
     }
 
