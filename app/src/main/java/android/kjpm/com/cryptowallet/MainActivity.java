@@ -2,7 +2,6 @@ package android.kjpm.com.cryptowallet;
 
 import android.content.Context;
 import android.content.Intent;
-import android.kjpm.com.cryptowallet.models.service.CryptoWalletService;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.AsyncTask;
@@ -24,9 +23,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.List;
-
-import javax.inject.Inject;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -216,9 +212,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 res = "Useraccount Not found!";
 
             }
-
-
-
 
         }
     }

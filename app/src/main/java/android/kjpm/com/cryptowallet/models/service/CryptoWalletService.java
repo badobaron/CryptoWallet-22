@@ -2,7 +2,6 @@ package android.kjpm.com.cryptowallet.models.service;
 
 import android.kjpm.com.cryptowallet.Currency;
 
-import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

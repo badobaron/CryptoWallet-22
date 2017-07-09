@@ -6,7 +6,6 @@ import android.kjpm.com.cryptowallet.di.component.CryptoWalletComponent;
 import android.kjpm.com.cryptowallet.di.component.DaggerCryptoWalletComponent;
 import android.kjpm.com.cryptowallet.di.module.CryptoWalletModule;
 import android.kjpm.com.cryptowallet.models.service.CryptoWalletService;
-import android.widget.Toast;
 
 
 /**
