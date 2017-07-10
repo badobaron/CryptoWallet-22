@@ -5,7 +5,7 @@ android {
     buildToolsVersion '25.0.0'
 
     defaultConfig {
-        applicationId "android.kjpm.com.cryptowallet"
+        applicationId "org.kjpm.com.cryptowallet"
         minSdkVersion 19
         targetSdkVersion 24
         versionCode 1

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="android.kjpm.com.cryptowallet.activity.Dashboard"
+    tools:context="android.kjpm.com.cryptowallet.org.kjpm.com.cryptowallet.activity.Dashboard"
     tools:showIn="@layout/app_bar_dashboard">
 
     <FrameLayout

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="android.kjpm.com.cryptowallet.MainActivity" android:background="#cfcfcf"
+    tools:context="android.kjpm.com.cryptowallet.org.kjpm.com.cryptowallet.MainActivity" android:background="#cfcfcf"
     android:weightSum="1">
     <TextView
             android:layout_width="fill_parent"

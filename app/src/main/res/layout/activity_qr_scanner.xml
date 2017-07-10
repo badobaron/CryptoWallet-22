@@ -5,6 +5,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="android.kjpm.com.cryptowallet.activity.QrScanner">
+    tools:context="android.kjpm.com.cryptowallet.org.kjpm.com.cryptowallet.activity.QrScanner">
 
 </android.support.constraint.ConstraintLayout>
